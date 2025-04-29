@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoBobux บริการเติม Robux</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../pictures/Bobobux.svg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="">
+                <img src="../pictures/Bobobux.svg" style="max-height: 86px;" alt="BoBobux.com" class="img-shadow">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="searchbar">
+                <input class="searchbox" type="text" placeholder="ค้นหาสินค้า">
+                <button class="searchsubmit" type="submit">
+                    <i class='bx bx-search'></i>
+                    ค้นหา
+                </button>
+            </div>
+            <li class="item"><a href="#"><i class='bx bxs-basket'></i> หมวดหมู่สินค้า</a></li>
+            <li class="item"><a href="#"><i class='bx bx-cart-add'></i> ซื้อ Robux</a></li>
+            <li class="item"><a href="#"><i class='bx bx-log-in'></i> เข้าสู่ระบบ</a></li>
+            <li class="item"><a href="#"><i class='bx bxs-user-plus'></i> สมัครสมาชิก</a></li>
+
+        </div>
+    </nav>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
+
+
+
+****************************************//CSS//**************************************************************
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    background: url('../pictures/Background.svg') center/cover no-repeat fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(255, 46, 150);
+    background: linear-gradient(180deg, rgb(255, 46, 150) 0%, #ffa9f900 100%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+.img-shadow {
+    filter: saturate(150%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+.menu {
+    padding: 1rem;
+    margin-right: 5rem;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.searchbox {
+    width: 200px;
+    height: 38px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchbox:focus {
+    outline: none;
+}
+
+.searchsubmit {
+    width: 67px;
+    height: 38px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.searchsubmit:hover {
+    font-size: .9rem;
+}
+
+.item {
+    margin: 1rem;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        color: rgb(255, 46, 150);
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
