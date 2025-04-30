@@ -17,15 +17,3 @@ document.querySelectorAll(".not-ready").forEach(function (link) {
     });
   });
 });
-
-function screenRecommend() {
-  if (window.innerWidth < 1200) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "ขนาดหน้าจอของคุณไม่เหมาะสมกับเว็บไซต์ ควรปรับขนาดความกว้างหน้าจอเป็น 1200px ขึ้นไป"
-    });
-  }
-}
-
-window.onload = screenRecommend;
