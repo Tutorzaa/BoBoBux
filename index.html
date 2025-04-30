@@ -10,6 +10,20 @@
     <link rel="icon" href="pictures/Bobobux.svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <script>
+        function screenRecommend() {
+  if (window.innerWidth < 1200) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "ขนาดหน้าจอของคุณไม่เหมาะสมกับเว็บไซต์ ควรปรับขนาดความกว้างหน้าจอเป็น 1200px ขึ้นไป"
+    });
+  }
+}
+
+window.onload = screenRecommend;
+    </script>
+    
 </head>
 
 <body>
