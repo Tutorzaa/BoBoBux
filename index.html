@@ -12,21 +12,23 @@
 
     <script>
         function screenRecommend() {
-  if (window.innerWidth < 1200) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "ขนาดหน้าจอของคุณไม่เหมาะสมกับเว็บไซต์ ควรปรับขนาดความกว้างหน้าจอเป็น 1200px ขึ้นไป"
-    });
-  }
-}
-
-window.onload = screenRecommend;
-    </script>
+            if (window.innerWidth < 1200) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "ขนาดหน้าจอของคุณไม่เหมาะสมกับเว็บไซต์ ควรปรับขนาดความกว้างหน้าจอเป็น 1200px ขึ้นไป"
+                }).then(() => {
+                    window.location.href = "https://tutorzaa.github.io/Krittikon/";
+                });
+            }
+        }
     
+        window.onload = screenRecommend;
+    </script>
+
 </head>
 
-<body>
+<div class="hidden-section">
 
     <nav>
         <div class="logo">
@@ -278,10 +280,10 @@ window.onload = screenRecommend;
 
     <!-- ----------------------section5------------------------ -->
 
+</div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="javascript/script.js"></script>
 </body>
 
 </html>

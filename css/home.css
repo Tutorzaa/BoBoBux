@@ -279,7 +279,7 @@ nav {
 .blogcon-3:hover::before,
 .blogcon-4:hover::before {
     opacity: 1;
-    transform: rotate(-45deg) translateY(100%); 
+    transform: rotate(-45deg) translateY(100%);
 }
 
 /* Hover Effect -------------------------------*/
@@ -541,4 +541,10 @@ footer {
     width: 100%;
     background: #ffffff98;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hidden-section {
+        display: none;
+    }
 }
